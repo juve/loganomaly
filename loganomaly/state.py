@@ -26,7 +26,7 @@ class SQLiteStateDB(object):
         self.db = sqlite3.connect(dbfile)
         
         if create:
-            self.db.executescript("""
+            self.db.execute("""
             create table STATE (
                 logfile string primary key,
                 inode integer,
