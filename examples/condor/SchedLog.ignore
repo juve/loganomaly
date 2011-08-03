@@ -1,0 +1,56 @@
+TransferQueueManager stats: active
+Tables are consistent
+Rebuilt prioritized runnable job list in
+Checking consistency running and runnable jobs
+Negotiating for owner: 
+Sent ad to central manager for
+Sent ad to 1 collectors for
+Activity on stashed negotiator socket:
+Finished negotiating for .* in local pool
+^[*]+
+Using config source: /etc/condor/condor_config
+Using local config sources: 
+   /etc/condor/condor_config.local
+DaemonCore: command socket at 
+DaemonCore: private command socket at 
+Setting maximum accepts per cycle 4.
+History file rotation is enabled.
+  Maximum history file size is: 
+  Number of rotated history files is: 2
+"/usr/local/condor/default/sbin/condor_shadow.pvm -classad" did not produce any output, ignoring
+About to rotate ClassAd log /var/condor/spool/job_queue.log
+All shadows have been killed, exiting.
+Successfully created sched universe process
+Starting add_shadow_birthdate
+Spawned local starter 
+Local starter pid .* for job .* exited with status 100
+Before rotation, deleting old history file history.
+Will rotate history file.
+Job .* aborted: removed because <OtherJobRemoveRequirements = DAGManJobId == .*> fired when job *.
+Constraint <OtherJobRemoveRequirements = DAGManJobId == .*> fired because job .* was removed
+Now in new log file /var/condor/log/SchedLog
+constraint [(]DAGManJobId == .*[)] does not evaluate to bool
+tried to abort .*; not found.
+[$]CondorVersion
+Got SIGQUIT.  Performing fast shutdown.
+Cron: Killing all jobs
+scheduler universe job .* pid .* exited with status [0-9]+
+Sent owner [(]0 jobs[)] ad to 1 collectors
+AutoCluster:config[(][)] significant attributes changed to
+condor_write[()]+: Socket closed when trying to write [0-9]+ bytes to collector
+Failed to send update to collector
+Buf::write[()]+: condor_write[()]+ failed
+attempt to connect to <128.9.128.225:9618> failed: Connection refused [(]connect errno = 111[)].
+"NO"
+"TOOL"
+"3DES,BLOWFISH"
+"YES"
+"FS,KERBEROS,GSI"
+"OPTIONAL"
+"PREFERRED"
+"OPTIONAL"
+"juve:.*"
+^[0-9]+$
+"60"
+time[()]+
+"OPTIONAL"

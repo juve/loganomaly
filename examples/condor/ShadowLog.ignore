@@ -1,0 +1,11 @@
+condor_shadow [(]condor_SHADOW[)] pid [0-9]+ EXITING WITH STATUS ((100)|(115))
+Job .* terminated: exited with status 0
+^[*]+
+Request to run on .* was ACCEPTED
+DaemonCore: Command Socket at 
+Initializing a VANILLA shadow for job 
+Using config source: /etc/condor/condor_config
+Using local config sources: 
+   /etc/condor/condor_config.local
+new log file /var/condor/log/ShadowLog
+Request to run on .* was DELAYED [(]previous job still being vacated[)]

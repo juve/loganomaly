@@ -1,0 +1,24 @@
+Using config source: /etc/condor/condor_config
+Using local config sources: 
+   /etc/condor/condor_config.local
+DaemonCore: command socket at 
+DaemonCore: private command socket at 
+Setting maximum accepts per cycle 
+Starter running a job under a schedd listening at 
+Done setting resource limits
+Starter running a local job with no shadow
+Reading job ClassAd from "STDIN"
+Found ClassAd data in "STDIN"
+setting the orig job name in starter
+setting the orig job iwd in starter
+Job .* set to execute immediately
+Starting a LOCAL universe job with ID:
+IWD: 
+Output file: 
+Error file: 
+Using wrapper 
+Create_Process succeeded, pid=
+Process exited, pid=[0-9]+, status=0
+All jobs have exited... starter exiting
+[*]{2,}
+Now in new log file /var/condor/log/StarterLog

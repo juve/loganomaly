@@ -1,0 +1,9 @@
+Got QUERY_.*_ADS
+(Sending .* ads in response to query)
+	Cleaning .*Ads ...
+Housekeeper:  Ready to clean old ads
+Housekeeper:  Done cleaning
+CollectorAd  : Inserting .*
+NegotiatorAd  : Inserting .*
+Removing stale ad:
+COLLECTOR_STATS_SWEEP

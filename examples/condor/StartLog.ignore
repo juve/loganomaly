@@ -1,0 +1,47 @@
+State change: RunBenchmarks is TRUE
+Changing activity: Idle -> Benchmarking
+State change: benchmarks completed
+Changing activity: Benchmarking -> Idle
+[*]{2,}
+State change: IS_OWNER is false
+Changing state: Owner -> Unclaimed
+New machine resource allocated
+State change: starter exited
+Changing activity: Busy -> Idle
+State change: received RELEASE_CLAIM command
+Changing state and activity: Claimed/Idle -> Preempting/Vacating
+State change: No preempting claim, returning to owner
+Changing state and activity: Preempting/Vacating -> Owner/Idle
+Called deactivate_claim_forcibly[()]+
+Starter pid [0-9]+ exited with status 0
+Remote job ID is 
+Got universe "VANILLA" [(]5[)] from request classad
+State change: claim-activation protocol successful
+Changing activity: Idle -> Busy
+Got activate_claim request from shadow 
+Remote owner is 
+State change: claiming protocol successful
+Changing state: Unclaimed -> Claimed
+Request accepted.
+Changing state and activity: Claimed/Busy -> Preempting/Vacating
+Got SIGTERM. Performing graceful shutdown.
+shutdown graceful
+Deleting Cronmgr
+All resources are free, exiting.
+Using config source: /etc/condor/condor_config
+Using local config sources: 
+   /etc/condor/condor_config.local
+DaemonCore: Command Socket at 
+"/usr/local/condor/default/sbin/condor_starter.pvm -classad" did not produce any output, ignoring
+VM-gahp server reported an internal error
+VM universe will be tested to check if it is available
+History file rotation is enabled.
+  Maximum history file size is: 
+  Number of rotated history files is: 
+About to run initial benchmarks.
+Completed initial benchmarks.
+new log file /var/condor/log/StartLog
+ioctl[(]SIOCETHTOOL/GWOL[)] failed: Operation not supported [(]95[)]
+You can safely ignore the above error if you're not using hibernation
+Got activate claim while starter is still alive.
+Telling shadow to try again later.

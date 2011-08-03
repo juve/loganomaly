@@ -1,0 +1,17 @@
+This is a simple tool for monitoring log files for anomalies. It is similar to
+logwatch, but much simpler.
+
+It takes a file containing a list of regular expressions to ignore (one per line)
+and bashes them against the log file(s) specified. If there are any lines in the
+logfile that do not match one of the regular expressions, they will be collected
+and printed to stdout.
+
+If you run this in cron, it will send you an email when an anomaly is detected.
+
+The tool saves the offset into the log so that it will not send duplicate warnings
+for the same log messages. It uses the inode number of the file and the offset to
+determine when the log file has been changed, truncated or rotated. This information
+is stored in a state database.
+
+You can invoke the tool with -t to run in testing mode. In testing mode log state
+information is not saved to the state database.

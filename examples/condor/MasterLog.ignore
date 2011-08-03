@@ -1,0 +1,19 @@
+Started DaemonCore process .*
+Started process .*
+Using config .*
+Using local config sources:.*
+   /etc/condor/condor_config.local
+DaemonCore: command socket at 
+DaemonCore: Command Socket at 
+DaemonCore: private command socket at 
+Sent SIGQUIT to .*
+The .* [(]pid [0-9]+[)] exited with status 0
+The .* [(]pid [0-9]+[)] died due to signal 3 [(]Quit[)]
+All daemons are gone.  Exiting.
+[*]{4} condor_master (condor_MASTER) pid .* EXITING WITH STATUS 0
+Preen pid is [0-9]+
+Setting maximum accepts per cycle 4.
+^[*]+
+Got SIGQUIT.  Performing fast shutdown.
+Canceling timer to re-start
+new log file /var/condor/log/MasterLog
