@@ -11,7 +11,7 @@ class NullStateDB(object):
         pass
 
 class SQLiteStateDB(object):
-    def __init__(self, dbfile):
+    def __init__(self, dbfile, timeout=30):
         dirname = os.path.abspath(os.path.dirname(dbfile))
         if not os.path.exists(dirname):
             try:
@@ -23,7 +23,7 @@ class SQLiteStateDB(object):
         
         create = not os.path.isfile(dbfile)
         
-        self.db = sqlite3.connect(dbfile)
+        self.db = sqlite3.connect(dbfile, timeout=timeout)
         
         if create:
             self.db.execute("""
